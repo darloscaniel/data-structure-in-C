@@ -12,7 +12,7 @@ int main(){
 	soma(c,b);
     printf("%d\n", a);// 30
     //printf("%d\n", *a);// Erro removido
-    printf("%p\n", (void*)&a); // Endereço de 'a' (ex: 0x500)
+    printf("%p\n", (void*)&a); // Endereço de 'a'
     printf("%p\n", (void*)c); // Endereço de 'a' pois "c" recebe &a
     printf("%p\n", (void*)&c); // Endereço de 'c'
     printf("%d\n", *c); // 30 pois acessa o endereço de 'a'
