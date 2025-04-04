@@ -36,7 +36,6 @@ void printStack(celula *list){
         printf("%d ->", aux->valor);
         aux = aux->prox;
     }
-    printf("NULL\n");
 }
 
 void freeStack(celula *list){
@@ -49,5 +48,19 @@ void freeStack(celula *list){
 }
 
 int main(){
-    
+    celula *stack = createStack(); // Criando pilha com cabeça
+
+    push(stack, 10);
+    push(stack, 20);
+    push(stack, 30);
+
+    printStack(stack);
+
+    int valor = pop(stack);
+    printf("removed: %d\n", valor);
+
+    printStack(stack);
+
+    freeStack(stack);
+    return 0;
 }
