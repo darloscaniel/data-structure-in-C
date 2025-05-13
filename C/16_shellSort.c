@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+//obs: o shellsort demonstra realmente algum impacto em vetores com um grande numero de elementos
+
 void shellSort(int v[], int n){
     int gaps[] = {4,1};//sequencia de Ciura para vetor de 10 elementos
-    int gapJumps = 2;
+    int gapJumps = sizeof(gaps)/ sizeof(gaps[0]);
 
 //loop para os gaps, aplicamos apenas os gaps abaixo do numero de elementos do vetor
     for(int g = 0; g<gapJumps; g++){
@@ -36,6 +38,6 @@ int main(){
 
     shellSort(vetor, 10);
     printVector(vetor,10);
-
+    
     return 0;
 }

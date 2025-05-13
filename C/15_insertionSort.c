@@ -2,7 +2,7 @@
 
 void insertionSort(int v[], int n){
 
-    //inicializamos i como 1 pois assumimos que o primeiro elemento esta ordenado!
+    //inicializamos i como 1 pois assumimos que o primeiro elemento esta ordenado
     for (int i = 1; i<n; i++){
         int insert = v[i];//guardamos o valor que queremos ordenar 
         int j = i-1;

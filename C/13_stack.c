@@ -48,7 +48,7 @@ void freeStack(celula *list){
 }
 
 int main(){
-    celula *stack = createStack(); // Criando pilha com cabeça
+    celula *stack = createStack();
 
     push(stack, 10);
     push(stack, 20);
