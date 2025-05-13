@@ -52,8 +52,8 @@ int main(){
     int vector[] = {87, 90, 71, 65, 33, 36, 12, 9, 52, 79};
     int len = sizeof (vector)/sizeof(vector[0]);
 
-    mergeSort(vector, 0, len);
-    printVector(vector, len);
+    mergeSort(vector, 0, len-1);
+    printVector(vector, len-1);
 
     return 0;
 }
