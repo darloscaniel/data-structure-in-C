@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+//para esse caso de algoritmo a complexidade é aproximada de O(n log n)
+//pois os numeros estão embaralhados de forma "equilibrada" onde o pivo vai dividir 
+//os elementos proximos da metade
+//aplicados ao vetor [38, 55, 15, 39, 70, 14, 33, 45, 40, 63, 19, 75, 36]
+
 //função para dividir o array em dois após encontrar a posição do pivô
 int partition(int v[], int left, int right){
     int pivot = v[right];

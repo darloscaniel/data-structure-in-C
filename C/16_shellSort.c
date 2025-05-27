@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 //obs: o shellsort demonstra realmente algum impacto em vetores com um grande numero de elementos
+// com essa sequencia de gaps, em um vetor válido para testes, se aproxima de O(n log n)
+// se colocarmos em numeros a complexidade estimada esta entre O(n^1.25) e O(n^1.5)
 
 void shellSort(int v[], int n){
     int gaps[] = {4,1};//sequencia de Ciura para vetor de 10 elementos
@@ -17,7 +19,6 @@ void shellSort(int v[], int n){
             while(j>= gap && v[j-gap] > insert){
                 v[j] = v[j-gap];
                 j-=gap;
-
             }
 
             v[j] = insert; 

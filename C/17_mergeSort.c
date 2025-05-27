@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+//complexidade para dividir o vetor recursivamente O(log n)
+//complexidade para unir os vetores divididos ordenadamente O(n)
+//algoritmo com complexidade O(n log n)
 int merge(int v[], int left, int mid, int right){
 
     int result[right-left];// vetor para armazenar o resultado
